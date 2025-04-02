@@ -15,13 +15,17 @@ body {
 header {
   width: 100%;
   max-width: 100%;
-  height: 60px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  color: #efeff0;
+  background-color: #0f8b8d;
+}
+header div.container {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f8b8d;
-  color: #efeff0;
-  /* padding: 10px 40px ; */
 }
 
 header .logo h1 {
@@ -33,6 +37,7 @@ header .search-form {
 }
 
 header .search-form input {
+  display: none;
   padding: 12px 25px;
   margin-right: 5px;
   border: 1px solid #ccc;
@@ -49,18 +54,18 @@ header .search-form input:focus {
 }
 
 header .search-form button {
-  padding: 12px 18px;
+  padding: 0px 8px;
   font-size: 17px;
   color: #daddd8;
   cursor: pointer;
   background-color: transparent;
   border: 1px solid;
-  border-radius: 12px;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
 header .search-form button:hover {
-  background-color: #5a4d52;
+  background-color: #085a5c;
 }
 
 header nav ul {
@@ -152,4 +157,172 @@ footer a:hover {
 
 footer .social-media {
   margin: 10px 0;
+}
+
+body.movie-detail-page,
+body.series-detail-page {
+  display: flex;
+  align-items: flex-start;
+}
+
+.movie-detail-page main,
+.series-detail-page main {
+  margin-left: 5%;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-detail,
+.series-detail {
+  text-align: center;
+  color: #daddd8;
+}
+
+.movie-layout,
+.series-layout {
+  padding-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem; /* Increased gap for better spacing */
+}
+
+.movie-cover,
+.series-cover {
+  max-width: 600px; /* Increased max-width */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.movie-title,
+.series-title {
+  font-size: 3rem; /* Increased font size */
+  color: #ec9a29;
+  margin-bottom: 20px;
+}
+
+.movie-rating,
+.series-rating,
+.movie-release-date,
+.series-release-date,
+.movie-duration,
+.series-synopsis,
+.movie-genre,
+.series-genre {
+  font-size: 1.4rem; /* Increased font size */
+  margin: 15px 0; /* Increased margin for better spacing */
+}
+
+.movie-genre a,
+.series-genre a {
+  color: #0f8b8d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.movie-genre a:hover,
+.series-genre a:hover {
+  text-decoration: underline;
+}
+
+.movie-info,
+.series-info {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 15px 15px 15px 50px;
+  color: #ffffff;
+  font-size: 1.3rem; /* Slightly increased font size for better readability */
+  font-weight: 600;
+  border-radius: 12px;
+  background-color: rgb(26, 23, 23);
+  box-shadow: 0px 0px 50px -20px #ec9b299f;
+  transition: all 0.8s ease;
+  border: 1px solid rgba(255, 166, 0, 0.568);
+}
+.movie-info:hover,
+.series-info:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0px 0px 40px -10px #ec9b29da;
+}
+
+.movie-info span,
+.series-info span {
+  color: #b8bbb6;
+  font-weight: 300;
+}
+
+.movie-title,
+.series-title {
+  font-size: 3rem; /* Increased font size */
+  color: #ec9a29;
+  margin-bottom: 20px;
+}
+
+.movie-rating,
+.series-rating,
+.movie-release-date,
+.series-release-date,
+.movie-duration,
+.series-synopsis,
+.movie-genre,
+.series-genre {
+  font-size: 1.4rem; /* Increased font size */
+  margin: 15px 0; /* Increased margin for better spacing */
+}
+.movie-synopsis,
+.series-synopsis {
+  max-width: 600px;
+  text-align: start;
+}
+
+.movie-genre a,
+.series-genre a {
+  color: #0f8b8d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.movie-genre a:hover,
+.series-genre a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for movie and series genres pages */
+.genres-page {
+  max-width: 90%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.genres-page h2 {
+  font-size: 2.5rem;
+  color: #ec9a29;
+  margin-bottom: 2rem;
+}
+
+.genres-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.genres-list a {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #daddd8;
+  text-decoration: none;
+  background-color: #0f8b8d;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.genres-list a:hover {
+  background-color: #ec9a29;
+  color: #1c1c1c;
+  transform: scale(1.05);
 }
