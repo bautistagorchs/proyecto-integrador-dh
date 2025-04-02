@@ -89,7 +89,6 @@ header nav ul li a {
 main {
   max-width: 90%;
   margin-top: 3rem;
-  /* padding: 40px; */
 }
 
 section {
@@ -183,19 +182,19 @@ body.series-detail-page {
   padding-top: 10px;
   display: flex;
   align-items: flex-start;
-  gap: 5rem; /* Increased gap for better spacing */
+  gap: 5rem;
 }
 
 .movie-cover,
 .series-cover {
-  max-width: 600px; /* Increased max-width */
+  max-width: 600px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 .movie-title,
 .series-title {
-  font-size: 3rem; /* Increased font size */
+  font-size: 3rem;
   color: #ec9a29;
   margin-bottom: 20px;
 }
@@ -208,8 +207,8 @@ body.series-detail-page {
 .series-synopsis,
 .movie-genre,
 .series-genre {
-  font-size: 1.4rem; /* Increased font size */
-  margin: 15px 0; /* Increased margin for better spacing */
+  font-size: 1.4rem;
+  margin: 15px 0;
 }
 
 .movie-genre a,
@@ -233,7 +232,7 @@ body.series-detail-page {
   flex-grow: 1;
   padding: 15px 15px 15px 50px;
   color: #ffffff;
-  font-size: 1.3rem; /* Slightly increased font size for better readability */
+  font-size: 1.3rem;
   font-weight: 600;
   border-radius: 12px;
   background-color: rgb(26, 23, 23);
@@ -255,7 +254,7 @@ body.series-detail-page {
 
 .movie-title,
 .series-title {
-  font-size: 3rem; /* Increased font size */
+  font-size: 3rem;
   color: #ec9a29;
   margin-bottom: 20px;
 }
@@ -268,8 +267,8 @@ body.series-detail-page {
 .series-synopsis,
 .movie-genre,
 .series-genre {
-  font-size: 1.4rem; /* Increased font size */
-  margin: 15px 0; /* Increased margin for better spacing */
+  font-size: 1.4rem;
+  margin: 15px 0;
 }
 .movie-synopsis,
 .series-synopsis {
@@ -289,7 +288,6 @@ body.series-detail-page {
   text-decoration: underline;
 }
 
-/* Styles for movie and series genres pages */
 .genres-page {
   max-width: 90%;
   margin: 3rem auto;

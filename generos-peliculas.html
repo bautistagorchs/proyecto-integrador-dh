@@ -9,7 +9,36 @@
   </head>
   <body>
     <header>
-      <!-- ...código existente del encabezado... -->
+      <div class="container">
+        <div class="logo">
+          <!-- <h1>Bautiwood</h1> -->
+          <a href="index.html">
+            <img src="./img/logo.png" alt="Logo Bautiwood" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <!-- <li><a href="index.html">Inicio</a></li> -->
+            <li><a href="peliculas.html">Películas</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="generos-peliculas.html">Géneros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <!-- <li><a href="generos-series.html">Géneros de Series</a></li> -->
+            <form
+              class="search-form"
+              action="resultados-busqueda.html"
+              method="get"
+            >
+              <input
+                type="text"
+                name="query"
+                placeholder="Buscar películas o series..."
+              />
+              <button type="submit">Buscar</button>
+            </form>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="genres-page">
       <h2>Géneros de Películas</h2>
@@ -32,7 +61,17 @@
       </div>
     </main>
     <footer>
-      <!-- ...código existente del pie de página... -->
+      <p>Integrantes del equipo: Bautista Gorchs</p>
+      <p>
+        Contacto:
+        <a href="mailto:contacto@bautiwood.com">contacto@bautiwood.com</a>
+      </p>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+      <p>&copy; 2025 Bautiwood. Todos los derechos reservados.</p>
     </footer>
   </body>
 </html>
