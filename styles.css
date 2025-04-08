@@ -24,12 +24,14 @@ header {
 header div.container {
   width: 90%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-header .logo h1 {
-  margin: 0;
+header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header .search-form {
@@ -79,6 +81,10 @@ header nav ul li {
   margin: 0 10px;
 }
 
+header nav button {
+  display: none;
+}
+
 header nav ul li a {
   color: #daddd8;
   font-weight: 500;
@@ -94,9 +100,6 @@ main {
 section {
   width: 100%;
   margin-bottom: 40px;
-  overflow-y: hidden;
-  overflow-x: auto;
-  scrollbar-color: #0f8b8d52 transparent;
 }
 
 section h2 {
@@ -108,6 +111,9 @@ section h2 {
 section .items {
   display: flex;
   gap: 40px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scrollbar-color: #0f8b8d52 transparent;
 }
 
 section .items a {
@@ -115,14 +121,15 @@ section .items a {
   text-decoration: none;
   color: #daddd8;
 }
-section .items p {
+section .items h3 {
   max-width: 300px;
   font-size: 21px;
+  font-weight: unset;
   text-decoration: underline;
   transition: all 0.3s ease;
 }
 
-section .items p:hover {
+section .items h3:hover {
   transform: scale(0.97);
 }
 
@@ -138,26 +145,6 @@ section .items img:hover {
   transform: scale(1.05);
 }
 
-footer {
-  background-color: #0f8b8d;
-  color: #efeff0;
-  text-align: center;
-  padding: 20px 0;
-}
-
-footer a {
-  color: #00aced;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer .social-media {
-  margin: 10px 0;
-}
-
 body.movie-detail-page,
 body.series-detail-page {
   display: flex;
@@ -166,6 +153,7 @@ body.series-detail-page {
 
 .movie-detail-page main,
 .series-detail-page main {
+  min-height: 100vh;
   margin-left: 5%;
   width: 100%;
   height: 100%;
@@ -173,7 +161,6 @@ body.series-detail-page {
 
 .movie-detail,
 .series-detail {
-  text-align: center;
   color: #daddd8;
 }
 
@@ -181,22 +168,17 @@ body.series-detail-page {
 .series-layout {
   padding-top: 10px;
   display: flex;
-  align-items: flex-start;
-  gap: 5rem;
+  align-items: stretch;
+  gap: 2rem;
 }
 
 .movie-cover,
 .series-cover {
+  width: 40%;
+  min-width: 400px;
   max-width: 600px;
+  /* max-width: 600px; */
   border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.movie-title,
-.series-title {
-  font-size: 3rem;
-  color: #ec9a29;
-  margin-bottom: 20px;
 }
 
 .movie-rating,
@@ -225,25 +207,15 @@ body.series-detail-page {
 
 .movie-info,
 .series-info {
-  max-width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex-grow: 1;
-  padding: 15px 15px 15px 50px;
+  padding: 15px 15px 0px 50px;
   color: #ffffff;
   font-size: 1.3rem;
   font-weight: 600;
   border-radius: 12px;
-  background-color: rgb(26, 23, 23);
-  box-shadow: 0px 0px 50px -20px #ec9b299f;
-  transition: all 0.8s ease;
-  border: 1px solid rgba(255, 166, 0, 0.568);
-}
-.movie-info:hover,
-.series-info:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 0px 0px 40px -10px #ec9b29da;
 }
 
 .movie-info span,
@@ -254,6 +226,7 @@ body.series-detail-page {
 
 .movie-title,
 .series-title {
+  margin: 0;
   font-size: 3rem;
   color: #ec9a29;
   margin-bottom: 20px;
@@ -323,4 +296,90 @@ body.series-detail-page {
   background-color: #ec9a29;
   color: #1c1c1c;
   transform: scale(1.05);
+}
+
+footer {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: #efeff0;
+  background-color: #0f8b8d;
+}
+
+footer a {
+  color: #00aced;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .social-media {
+  margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+  section .items img {
+    width: 150px;
+    height: 200px;
+  }
+  section .items h3 {
+    font-size: 18px;
+  }
+  .movie-layout,
+  .series-layout {
+    gap: 2rem;
+  }
+  .movie-info,
+  .series-info {
+    padding: 15px 15px 0px 20px;
+    background-color: rgb(26, 23, 23);
+    box-shadow: 0px 0px 50px -20px #0f8b8d9c;
+    transition: all 0.8s ease;
+    border: 1px solid #0f8b8d;
+  }
+  .movie-info:hover,
+  .series-info:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0px 0px 40px -10px #0f8b8dc4;
+  }
+  .movie-info h1,
+  .series-info h1 {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+  .movie-info p,
+  .series-info p {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+}
+@media (max-width: 900px) {
+  header .logo img {
+    width: 250px;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav ul button {
+    display: block;
+  }
+  header nav:has(button:focus) ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .movie-layout,
+  .series-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .movie-cover,
+  .series-cover {
+    min-width: 90%;
+  }
 }
