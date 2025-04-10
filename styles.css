@@ -22,7 +22,7 @@ header {
   background-color: #0f8b8d;
 }
 header div.container {
-  width: 90%;
+  width: 92%;
   display: flex;
   align-items: center;
 }
@@ -30,21 +30,17 @@ header div.container {
 header nav {
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-}
-
-header .search-form {
-  display: flex;
+  align-items: center;
 }
 
 header .search-form input {
-  display: none;
-  padding: 12px 25px;
-  margin-right: 5px;
-  border: 1px solid #ccc;
+  width: 100%;
+  padding: 4px;
+  padding-right: 0;
   border: none;
-  border-radius: 12px;
+  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -71,18 +67,15 @@ header .search-form button:hover {
 }
 
 header nav ul {
-  list-style: none;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 header nav ul li {
   margin: 0 10px;
-}
-
-header nav button {
-  display: none;
 }
 
 header nav ul li a {
@@ -356,20 +349,11 @@ footer .social-media {
     margin: 8px 0;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   header .logo img {
     width: 250px;
   }
-  header nav ul {
-    display: none;
-  }
-  header nav ul button {
-    display: block;
-  }
-  header nav:has(button:focus) ul {
-    display: flex;
-    flex-direction: column;
-  }
+
   .movie-layout,
   .series-layout {
     flex-direction: column;
@@ -377,7 +361,18 @@ footer .social-media {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
+  header {
+    height: 120px;
+  }
+  header nav {
+    justify-content: center;
+  }
+  header nav ul {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
   .movie-cover,
   .series-cover {
     min-width: 90%;
