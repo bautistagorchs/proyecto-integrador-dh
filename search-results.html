@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Resultados de Búsqueda</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="Logo Bautiwood" />
+            </a>
+          </div>
+          <ul>
+            <li><a href="generos-peliculas.html">Géneros Peliculas</a></li>
+            <li><a href="generos-series.html">Géneros Series</a></li>
+            <!-- <li><a href="generos-series.html">Géneros de Series</a></li> -->
+          </ul>
+          <ul>
+            <form class="search-form" action="search-results.html" method="get">
+              <input type="text" name="query" placeholder="Buscar" />
+            </form>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="search-results-page">
+      <h1>Resultados para: "tom holland"</h1>
+      <div class="results-list">
+        <div class="result-item">
+          <a href="detalle-pelicula.html">
+            <img src="./img/pelicula8.jpg" alt="Pelicula 8" />
+            <h3>Spider Man - No way home (2023)</h3>
+          </a>
+        </div>
+        <div class="result-item">
+          <a href="detalle-pelicula.html">
+            <img src="./img/pelicula1.jpg" alt="Película 1" />
+            <h3>Uncharted (2022)</h3>
+          </a>
+        </div>
+        <div class="result-item">
+          <a href="detalle-pelicula.html">
+            <img src="./img/pelicula9.jpg" alt="Pelicula 9" />
+            <h3>Spider Man - Far from home (2019)</h3>
+          </a>
+        </div>
+      </div>
+      <div class="no-results">
+        <p>No se encontraron resultados para tu búsqueda.</p>
+      </div>
+      <div class="back-button-container">
+        <a href="index.html" class="back-button"
+          >Volver a la página principal</a
+        >
+      </div>
+    </main>
+    <footer>
+      <p>Integrantes del equipo: Bautista Gorchs</p>
+      <p>
+        Contacto:
+        <a href="mailto:contacto@bautiwood.com">contacto@bautiwood.com</a>
+      </p>
+      <div class="social-media">
+        <a href="https://Github.com" target="_blank">Github</a> |
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+      <p>&copy; 2025 Bautiwood. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
