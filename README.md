@@ -1,7 +1,8 @@
-# Programación I - Digital House 
-# Sitio Web de Películas y Series
+# Programación I - Digital House
 
-Este proyecto es una **maqueta de un sitio web dedicado a películas y series**, construida utilizando **HTML y CSS**. El objetivo principal es establecer la estructura visual y la navegación del sitio, creando una experiencia de usuario coherente a través de sus diferentes secciones.
+## Sitio Web de Películas y Series
+
+Este proyecto es **un sitio web dedicado a películas y series**, construida utilizando **HTML y CSS**. El objetivo principal es establecer la estructura visual y la navegación del sitio, creando una experiencia de usuario coherente a través de sus diferentes secciones.
 
 ## ¿Qué incluye este proyecto?
 
