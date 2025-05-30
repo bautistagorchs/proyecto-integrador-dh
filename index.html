@@ -27,13 +27,17 @@
             <li><a href="generos-series.html">Géneros Series</a></li>
             <!-- <li><a href="generos-series.html">Géneros de Series</a></li> -->
           </ul>
-          <ul>
+          <div class="div-ul">
             <form class="search-form" action="search-results.html" method="get">
+              <input type="radio" name="media-type" id="tv-shows" />
+              <label for="tv-shows">Series</label>
+              <input type="radio" name="media-type" id="movies" checked />
+              <label for="movies">Peliculas</label>
               <input type="text" name="query" placeholder="Buscar" />
             </form>
             <li><a href="login.html">Login</a></li>
             <li><a href="register.html">Register</a></li>
-          </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -62,7 +66,7 @@
 
       <!-- <section class="top-rated">
         <h2>Cine en lo más alto</h2>
-        <div class="items">
+        <div class="items" id="items-top-rated-movies">
           <a href="detalle-pelicula.html">
             <img src="./img/pelicula14.jpg" alt="Pelicula 14" />
             <h3>Insurgente (2015)</h3>
@@ -84,9 +88,9 @@
             <h3>Divergente (2014)</h3>
           </a>
         </div>
-      </section>
+      </section> -->
 
-      <section class="top-rated">
+      <!-- <section class="top-rated">
         <h2>Top series de todos los tiempos</h2>
         <div class="items">
           <a href="detalle-serie.html">
