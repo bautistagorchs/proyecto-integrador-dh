@@ -19,7 +19,7 @@ const options = {
 
 // Fetch para obtener "Exitos en pantalla"
 fetch(
-  "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1",
+  "https://api.themoviedb.org/3/movie/popular?language=es-ES-US&page=1",
   options
 )
   .then((res) => res.json())
@@ -44,7 +44,10 @@ fetch(
   .catch((err) => console.error(err));
 
 // Fetch para obtener "Series en auge"
-fetch("https://api.themoviedb.org/3/tv/popular?language=en-US&page=1", options)
+fetch(
+  "https://api.themoviedb.org/3/tv/popular?language=es-ES-US&page=1",
+  options
+)
   .then((res) => res.json())
   .then((res) => {
     for (let i = 0; i < res.results.length; i++) {
@@ -67,7 +70,10 @@ fetch("https://api.themoviedb.org/3/tv/popular?language=en-US&page=1", options)
   .catch((err) => console.error(err));
 
 // Fetch para obtener "En boca de todos"
-fetch("https://api.themoviedb.org/3/trending/movie/day?language=en-US", options)
+fetch(
+  "https://api.themoviedb.org/3/trending/movie/day?language=es-ES-US",
+  options
+)
   .then((res) => res.json())
   .then((res) => {
     for (let i = 0; i < res.results.length; i++) {

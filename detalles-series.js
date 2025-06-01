@@ -14,11 +14,9 @@ const options = {
   },
 };
 
-fetch(`https://api.themoviedb.org/3/tv/${id}?language=en-US`, options)
+fetch(`https://api.themoviedb.org/3/tv/${id}?language=es-ES-US`, options)
   .then((res) => res.json())
   .then((res) => {
-    console.log(res);
-
     seriesDetails += `
         <div class="series-layout">
           <img
@@ -43,7 +41,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?language=en-US`, options)
             <p class="series-genre">
               Géneros: ${res.genres.map(
                 (genre) =>
-                  `<a href="genre-detail.html?id=${genre.id}"> ${genre.name}</a>`
+                  `<a href="genre-detail.html?id=${genre.id}&genero=${genre.name}"> ${genre.name}</a>`
               )}
             </p>
           </div>

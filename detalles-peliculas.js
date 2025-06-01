@@ -14,7 +14,7 @@ const options = {
   },
 };
 
-fetch(`https://api.themoviedb.org/3/movie/${id}?language=en-US`, options)
+fetch(`https://api.themoviedb.org/3/movie/${id}?language=es-ES-US`, options)
   .then((res) => res.json())
   .then((res) => {
     movieDetails += `
@@ -43,7 +43,8 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?language=en-US`, options)
             </p>
             <p class="movie-genre">
               Géneros: ${res.genres.map(
-                (genre) => `<a href="genre-detail.html"> ${genre.name}</a>`
+                (genre) =>
+                  `<a href="genre-detail.html?id=${genre.id}&genero=${genre.name}"> ${genre.name}</a>`
               )}
             </p>
           </div>
