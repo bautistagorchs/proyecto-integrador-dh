@@ -345,7 +345,7 @@ main.genres-page {
 
 .genre-detail-page,
 .search-results-page {
-  height: 100vh;
+  /* height: 100vh;| */
   max-width: 90%;
   margin: 3rem auto;
   text-align: center;
@@ -366,20 +366,40 @@ main.search-results-page {
   margin-bottom: 2rem;
 }
 
-.genre-items,
-.results-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 35px;
+.genre-detail-page h2,
+.search-results-page h2 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.genre-detail-page p,
+.search-results-page p {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #daddd8;
+  text-align: start;
 }
 
-.genre-items .item,
+.genre-items-movies,
+.genre-items-series,
+.results-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 35px;
+  overflow-x: scroll;
+  scrollbar-color: #0f8b8d52 transparent;
+}
+
+.genre-items-movies .item,
+.genre-items-series .item,
 .results-list .result-item {
   text-align: center;
 }
 
-.genre-items img,
+.genre-items-movies img,
+.genre-items-series img,
 .results-list img {
   width: 300px;
   height: 400px;
@@ -388,12 +408,14 @@ main.search-results-page {
   transition: transform 0.3s ease;
 }
 
-.genre-items img:hover,
+.genre-items-movies img:hover,
+.genre-items-series img:hover,
 .results-list img:hover {
   transform: scale(1.05);
 }
 
-.genre-items h3,
+.genre-items-movies h3,
+.genre-items-series h3,
 .results-list h3 {
   max-width: 300px;
   margin-top: 10px;
