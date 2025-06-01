@@ -27,13 +27,21 @@
             <li><a href="generos-series.html">Géneros Series</a></li>
             <!-- <li><a href="generos-series.html">Géneros de Series</a></li> -->
           </ul>
-          <ul>
-            <form class="search-form" action="search-results.html" method="get">
-              <input type="text" name="query" placeholder="Buscar" />
+          <div class="div-ul">
+            <form
+              class="search-form"
+              action="search-results.html?"
+              method="get"
+            >
+              <input type="radio" name="media-type" id="tv-shows" />
+              <label for="tv-shows">Series</label>
+              <input type="radio" name="media-type" id="movies" checked />
+              <label for="movies">Peliculas</label>
+              <input type="text" name="query" placeholder="Buscar" value="" />
             </form>
             <li><a href="login.html">Login</a></li>
             <li><a href="register.html">Register</a></li>
-          </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -41,93 +49,28 @@
     <main>
       <section class="popular-movies">
         <h2>Éxitos de la pantalla</h2>
-        <div class="items">
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula1.jpg" alt="Película 1" />
-            <h3>Uncharted (2022)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula2.jpg" alt="Película 2" />
-            <h3>Dune (2021)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula3.jpg" alt="Película 3" />
-            <h3>La Jungla (2013)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula4.jpg" alt="Película 4" />
-            <h3>Mision Imposible (2023)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula5.jpg" alt="Película 5" />
-            <h3>La propuesta (2009)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula6.jpg" alt="Película 6" />
-            <h3>Wonka (2023)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula7.jpg" alt="Película 7" />
-            <h3>Call my by your name (2017)</h3>
-          </a>
+        <div class="items" id="items-popular-movies">
+          <!-- el contenido se carga desde el archivo index.js -->
         </div>
       </section>
 
       <section class="popular-series">
         <h2>Series en auge</h2>
-        <div class="items">
-          <a href="detalle-serie.html">
-            <img src="./img/serie1.jpg" alt="Serie 1" />
-            <h3>Interstellar (2014)</h3>
-          </a>
-          <a href="detalle-serie.html">
-            <img src="./img/serie3.jpg" alt="Serie 3" />
-            <h3>I Care a Lot (2020)</h3>
-          </a>
-          <a href="detalle-serie.html">
-            <img src="./img/serie4.jpg" alt="Serie 4" />
-            <h3>Peaky Blinders (2013)</h3>
-          </a>
-          <a href="detalle-serie.html">
-            <img src="./img/serie5.jpg" alt="Serie 5" />
-            <h3>Heartstopper (2022)</h3>
-          </a>
-          <a href="detalle-serie.html">
-            <img src="./img/serie6.jpg" alt="Serie 6" />
-            <h3>La Casa de Papel (2021)</h3>
-          </a>
+        <div class="items" id="items-popular-tvshows">
+          <!-- el contenido se carga desde el archivo index.js -->
         </div>
       </section>
 
       <section class="top-rated">
         <h2>En boca de todos</h2>
-        <div class="items">
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula8.jpg" alt="Pelicula 8" />
-            <h3>Spider Man - No way home (2023)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula9.jpg" alt="Pelicula 9" />
-            <h3>Spider Man - Far from home (2019)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula10.jpg" alt="Pelicula 10" />
-            <h3>Misión: imposible: Sentencia final (2025)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula11.jpg" alt="Pelicula 11" />
-            <h3>Capitán América: Brave new world (2025)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula12.jpg" alt="Pelicula 12" />
-            <h3>Wolfgang (2025)</h3>
-          </a>
+        <div class="items" id="items-top-rated">
+          <!-- el contenido se carga desde el archivo index.js -->
         </div>
       </section>
 
-      <section class="top-rated">
+      <!-- <section class="top-rated">
         <h2>Cine en lo más alto</h2>
-        <div class="items">
+        <div class="items" id="items-top-rated-movies">
           <a href="detalle-pelicula.html">
             <img src="./img/pelicula14.jpg" alt="Pelicula 14" />
             <h3>Insurgente (2015)</h3>
@@ -149,9 +92,9 @@
             <h3>Divergente (2014)</h3>
           </a>
         </div>
-      </section>
+      </section> -->
 
-      <section class="top-rated">
+      <!-- <section class="top-rated">
         <h2>Top series de todos los tiempos</h2>
         <div class="items">
           <a href="detalle-serie.html">
@@ -175,7 +118,7 @@
             <h3>Memento (2000)</h3>
           </a>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer>
@@ -192,5 +135,6 @@
       </div>
       <p>&copy; 2025 Bautiwood. Todos los derechos reservados.</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
