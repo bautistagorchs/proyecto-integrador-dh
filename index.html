@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"" />
   </head>
   <body class="home-page">
     <header>
@@ -25,7 +25,6 @@
           <ul>
             <li><a href="generos-peliculas.html">Géneros Peliculas</a></li>
             <li><a href="generos-series.html">Géneros Series</a></li>
-            <!-- <li><a href="generos-series.html">Géneros de Series</a></li> -->
           </ul>
           <div class="div-ul">
             <form
@@ -33,10 +32,10 @@
               action="search-results.html?"
               method="get"
             >
-              <input type="radio" name="media-type" id="tv-shows" />
+              <input type="radio" name="media-type" id="tv-shows" value="tv" />
               <label for="tv-shows">Series</label>
-              <input type="radio" name="media-type" id="movies" checked />
-              <label for="movies">Peliculas</label>
+              <input type="radio" name="media-type" id="movie" value="movie" />
+              <label for="movie">Peliculas</label>
               <input type="text" name="query" placeholder="Buscar" value="" />
             </form>
             <li><a href="login.html">Login</a></li>
@@ -67,58 +66,6 @@
           <!-- el contenido se carga desde el archivo index.js -->
         </div>
       </section>
-
-      <!-- <section class="top-rated">
-        <h2>Cine en lo más alto</h2>
-        <div class="items" id="items-top-rated-movies">
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula14.jpg" alt="Pelicula 14" />
-            <h3>Insurgente (2015)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula13.jpg" alt="Pelicula 13" />
-            <h3>Tracer (2015)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula15.jpg" alt="Pelicula 15" />
-            <h3>Leal (2016)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula17.jpg" alt="Pelicula 17" />
-            <h3>Argylle (2024)</h3>
-          </a>
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula16.jpg" alt="Pelicula 16" />
-            <h3>Divergente (2014)</h3>
-          </a>
-        </div>
-      </section> -->
-
-      <!-- <section class="top-rated">
-        <h2>Top series de todos los tiempos</h2>
-        <div class="items">
-          <a href="detalle-serie.html">
-            <img src="./img/serie7.jpg" alt="Serie 7" />
-            <h3>The White Lotus (2021)</h3>
-          </a>
-          <a href="detalle-serie.html">
-            <img src="./img/serie8.jpg" alt="Serie 8" />
-            <h3>Arrow (2012)</h3>
-          </a>
-          <a href="detalle-serie.html">
-            <img src="./img/serie9.jpg" alt="Serie 9" />
-            <h3>Flash (2014)</h3>
-          </a>
-          <a href="detalle-serie.html">
-            <img src="./img/serie10.jpg" alt="Serie 10" />
-            <h3>Severance (2022)</h3>
-          </a>
-          <a href="detalle-serie.html">
-            <img src="./img/serie11.jpg" alt="Serie 11" />
-            <h3>Memento (2000)</h3>
-          </a>
-        </div>
-      </section> -->
     </main>
 
     <footer>
@@ -135,7 +82,7 @@
       </div>
       <p>&copy; 2025 Bautiwood. Todos los derechos reservados.</p>
     </footer>
-    <script src="config.js"></script>
-    <script src="index.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

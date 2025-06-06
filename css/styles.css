@@ -392,6 +392,19 @@ main.search-results-page {
   scrollbar-color: #0f8b8d52 transparent;
 }
 
+.results-list {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.result-item-onload {
+  width: 300px;
+  height: 400px;
+
+  background-color: gray;
+  border-radius: 8px;
+}
+
 .genre-items-movies .item,
 .genre-items-series .item,
 .results-list .result-item {

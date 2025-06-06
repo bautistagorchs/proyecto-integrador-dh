@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"" />
     <title>Resultados de Búsqueda</title>
   </head>
   <body>
@@ -19,40 +19,37 @@
           <ul>
             <li><a href="generos-peliculas.html">Géneros Peliculas</a></li>
             <li><a href="generos-series.html">Géneros Series</a></li>
-            <!-- <li><a href="generos-series.html">Géneros de Series</a></li> -->
           </ul>
-          <ul>
-            <form class="search-form" action="search-results.html" method="get">
-              <input type="text" name="query" placeholder="Buscar" />
+          <div class="div-ul">
+            <form
+              class="search-form"
+              action="search-results.html?"
+              method="get"
+            >
+              <input type="radio" name="media-type" id="tv-shows" value="tv" />
+              <label for="tv-shows">Series</label>
+              <input type="radio" name="media-type" id="movie" value="movie" />
+              <label for="movie">Peliculas</label>
+              <input type="text" name="query" placeholder="Buscar" value="" />
             </form>
             <li><a href="login.html">Login</a></li>
             <li><a href="register.html">Register</a></li>
-          </ul>
+          </div>
         </nav>
       </div>
     </header>
 
     <main class="search-results-page">
-      <h1>Resultados para: "tom holland"</h1>
+      <h1 class="results-title"></h1>
       <div class="results-list">
-        <div class="result-item">
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula8.jpg" alt="Pelicula 8" />
-            <h3>Spider Man - No way home (2023)</h3>
-          </a>
-        </div>
-        <div class="result-item">
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula1.jpg" alt="Película 1" />
-            <h3>Uncharted (2022)</h3>
-          </a>
-        </div>
-        <div class="result-item">
-          <a href="detalle-pelicula.html">
-            <img src="./img/pelicula9.jpg" alt="Pelicula 9" />
-            <h3>Spider Man - Far from home (2019)</h3>
-          </a>
-        </div>
+        <!-- se carga la informacion desde el search-result.js -->
+        <div class="result-item-onload"></div>
+        <div class="result-item-onload"></div>
+        <div class="result-item-onload"></div>
+        <div class="result-item-onload"></div>
+        <div class="result-item-onload"></div>
+        <div class="result-item-onload"></div>
+        <div class="result-item-onload"></div>
       </div>
       <div class="no-results">
         <p>No se encontraron resultados para tu búsqueda.</p>
@@ -77,7 +74,7 @@
       </div>
       <p>&copy; 2025 Bautiwood. Todos los derechos reservados.</p>
     </footer>
-    <script src="config.js"></script>
-    <script src="serach-results.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/search-results.js"></script>
   </body>
 </html>

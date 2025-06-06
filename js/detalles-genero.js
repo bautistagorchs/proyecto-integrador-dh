@@ -8,7 +8,6 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
 let genre = queryStringObj.get("genero");
-genreTitle.innerHTML = `Género: ${genre}`;
 
 let get_release_year = (title, date) => {
   return `${title} (${date.split("-")[0]}) `;
