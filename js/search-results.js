@@ -29,7 +29,6 @@ fetch(
 )
   .then((res) => res.json())
   .then((res) => {
-    // resultsItemsHtml.innerHTML = "";
     title.innerHTML = `Resultados para: "${searchQuery}"`;
     if (mediaType === "movie") {
       for (let i = 0; i < res.results.length; i++) {

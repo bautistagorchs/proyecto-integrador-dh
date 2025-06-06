@@ -8,6 +8,13 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
 let genre = queryStringObj.get("genero");
+let comingFrom = queryStringObj.get("comingFrom");
+let container = document.querySelector(".peliculas-and-series-container");
+console.log(`🚀 - container:`, container);
+
+if (comingFrom === "series") {
+  container.classList.add("series-reverse");
+}
 
 let get_release_year = (title, date) => {
   return `${title} (${date.split("-")[0]}) `;
@@ -27,6 +34,7 @@ fetch(
 )
   .then((res) => res.json())
   .then((res) => {
+    genreTitle.innerHTML = `Resultados para el género: ${genre}`;
     for (let i = 0; i < res.results.length; i++) {
       genreItemsMovies += `
         <div class="item">

@@ -365,6 +365,14 @@ main.search-results-page {
   color: #ec9a29;
   margin-bottom: 2rem;
 }
+/* .genre-detail-page {
+  display: flex;
+  flex-direction: column;
+} */
+.series-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 .genre-detail-page h2,
 .search-results-page h2 {

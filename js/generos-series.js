@@ -14,7 +14,7 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?language=es-ES", options)
   .then((res) => {
     for (let i = 0; i < res.genres.length; i++) {
       const genre = res.genres[i];
-      genresList += `<a href="genre-detail.html?id=${genre.id}&genero=${genre.name}">${genre.name}</a>`;
+      genresList += `<a href="genre-detail.html?id=${genre.id}&genero=${genre.name}&comingFrom=series">${genre.name}</a>`;
     }
     genresListHtml.innerHTML = genresList;
   })

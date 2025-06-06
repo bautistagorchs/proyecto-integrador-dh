@@ -40,7 +40,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?language=es-ES-US`, options)
             <p class="series-genre">
               Géneros: ${res.genres.map(
                 (genre) =>
-                  `<a href="genre-detail.html?id=${genre.id}&genero=${genre.name}"> ${genre.name}</a>`
+                  `<a href="genre-detail.html?id=${genre.id}&genero=${genre.name}&comingFrom=series""> ${genre.name}</a>`
               )}
             </p>
           </div>
